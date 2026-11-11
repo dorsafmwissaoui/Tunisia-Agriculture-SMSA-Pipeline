@@ -8,7 +8,7 @@
 
 ---
 
-## 🇸🇦 القسم العربي: التقرير الاستشاري الاستراتيجي (Executive Insights)
+##  التقرير الاستشاري الاستراتيجي
 
 ### 📌 نظرة عامة على المشروع
 يمثل هذا المشروع خط إنتاج متكامل لتحليل البيانات الفلاحية في تونس. تم جلب البيانات الخام من وزارة الفلاحة، وتنظيفها ومعايرتها جغرافيّاً وماليّاً بالكامل باستخدام لغة **بايثون (Pandas)**، ومن ثم بناء لوحة تحكم تفاعلية ذكية وحية باستخدام الجداول المحورية والمقسّمات التفاعلية لتمكين صناع القرار من اتخاذ خطوات استباقية مدعومة بالأرقام.
@@ -37,7 +37,7 @@
 
 ---
 
-## 🇬🇧 English Section: Strategic Analytical Report
+## Strategic Analytical Report
 
 ### 📌 Project Overview
 This repository showcases an end-to-end production-grade data analytics architecture. The pipeline ingests multi-structured localized datasets from the Tunisian Ministry of Agriculture, executes advanced algorithmic data cleaning and geo-standardization via **Python (Pandas)**, performs Exploratory Data Analysis (EDA) including financial outlier identification and statistical correlations, and deploys a live corporate reporting layer.
