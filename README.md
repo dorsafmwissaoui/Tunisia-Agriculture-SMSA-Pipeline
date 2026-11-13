@@ -1,70 +1,53 @@
 
 
 
-# خط الإنتاج الشامل لتحليل البيانات: الشركات التعاونية الفلاحية في تونس (SMSA)
-# Comprehensive Data Analytics Pipeline: Tunisian Agricultural Cooperative Societies (SMSA)
+# تحليل بيانات الشركات التعاونية الفلاحية في تونس (SMSA)
+# Tunisian Agricultural Cooperatives (SMSA) Data Analysis
 
-👉 [**اضغط هنا لزيارة لوحة التحكم التفاعلية الحية / View Live Interactive Dashboard Here**](https://docs.google.com/spreadsheets/d/1xl6FTgRiQ785RDBSkLr2IM2qdCVR6BdTQiTUdM312Bw/edit?usp=sharing)
-
----
-
-##  التقرير الاستشاري الاستراتيجي
-
-### 📌 نظرة عامة على المشروع
-يمثل هذا المشروع خط إنتاج متكامل لتحليل البيانات الفلاحية في تونس. تم جلب البيانات الخام من وزارة الفلاحة، وتنظيفها ومعايرتها جغرافيّاً وماليّاً بالكامل باستخدام لغة **بايثون (Pandas)**، ومن ثم بناء لوحة تحكم تفاعلية ذكية وحية باستخدام الجداول المحورية والمقسّمات التفاعلية لتمكين صناع القرار من اتخاذ خطوات استباقية مدعومة بالأرقام.
-
-### 🧭 أسئلة العمل التجارية المعالجة (Business Questions)
-تم تصميم هذا التحليل للإجابة بدقة على الأسئلة الاستراتيجية التالية التي تشغل بال مسؤولي قطاع الفلاحة والدعم:
-1. **الكثافة الإقليمية:** أين تتركز الشركات التعاونية جغرافيّاً في تونس لتوجيه الاستثمارات اللوجستية؟
-2. **هيكلة رؤوس الأموال:** كيف تتوزع الميزانيات التمويلية بين المعتمديات، وأين تقع الفجوات التمويلية؟
-3. **الحصص السوقية للأنشطة:** ما هي القطاعات الفلاحية المهيمنة (حبوب، تربية ماشية، زيتون) وأيها يعاني من نقص الخدمات؟
-4. **الارتباط الهيكلي:** هل القوة المالية ورأس المال القوي للشركة هو المحرك الأساسي لجذب الفلاحين وزيادة عدد المنخرطين؟
-5. **الاحتكار والهيمنة المالية:** هل توجد شركات عملاقة تشوه متوسطات السوق وتستحوذ على الدعم؟
-
-### 📊 الاستنتاجات التحليلية والتوصيات الاستراتيجية (Insights & Actions)
-
-#### 1. مفاجأة تحليل الارتباط الإحصائي (رأس المال مقابل المنخرطين)
-* **النتيجة الإحصائية:** عند حساب معامل ارتباط بيرسون (Pearson Correlation) بين رأس المال وعدد المنخرطين، كانت النتيجة قريبة جداً من الصفر (علاقة شبه منعدمة).
-* **التوصية التجارية لصانع القرار:** القوة المالية للشركة **ليست** السبب الذي يدفع الفلاح التونسي للانضمام للتعاونيات. الفلاح يبحث عن القرب الجغرافي وتوفر الخدمات الميدانية (مثل جمع الحبوب أو توفير الأعلاف). ننصح الوزارة بتوجيه الدعم لبناء فروع قريبة من الفلاحين بدلاً من ضخ أموال ضخمة في خزائن شركات مركزية كبرى.
-
-#### 2. عزل وتحجيم القيم الشاذة والاحتكار (Financial Outliers)
-* **النتيجة الإحصائية:** عبر معادلة الصندوق الإحصائي (IQR)، تبين أن النطاق الطبيعي لأغلب الشركات يتراوح بين 4,000 و 16,000 دينار، ولكن تم عزل شركات شاذة تخطت حاجز الـ 25,000 دينار.
-* **التوصية التجارية لصانع القرار:** هناك فئة محدودة جداً من الشركات "العمالقة" تهيمن ماليّاً على السوق وتخفي خلفها ضعف الشركات الصغرى. يجب فرض رقابة صارمة على توزيع القروض والدعم الفلاحي لضمان وصوله للشركات الصغيرة الناشئة الواقعة داخل النطاق الطبيعي لحماية عدالة السوق.
-
-#### 3. سد فجوة الأنشطة والخدمات
-* **النتيجة الإحصائية:** كشف مخطط الدونات التفاعلي عن تكدس هائل للشركات في قطاعي الحبوب وتربية الماشية التقليدية، مقابل نقص حاد في شركات الخدمات اللوجستية الحديثة.
-* **التوصية التجارية لصانع القرار:** يجب تقديم حوافز وإعفاءات ضريبية تشجع الفلاحين على تأسيس شركات تعاونية متخصصة في خدمات النقل والتبريد والتسليم المباشر للمستهلك لكسر احتكار السماسرة.
+🔗 [**لوحة التحكم التفاعلية / Live Interactive Dashboard**](https://docs.google.com/spreadsheets/d/1xl6FTgRiQ785RDBSkLr2IM2qdCVR6BdTQiTUdM312Bw/edit?usp=sharing)
 
 ---
 
-## Strategic Analytical Report
+##  ملخص المشروع
 
-### 📌 Project Overview
-This repository showcases an end-to-end production-grade data analytics architecture. The pipeline ingests multi-structured localized datasets from the Tunisian Ministry of Agriculture, executes advanced algorithmic data cleaning and geo-standardization via **Python (Pandas)**, performs Exploratory Data Analysis (EDA) including financial outlier identification and statistical correlations, and deploys a live corporate reporting layer.
+### فكرة المشروع
+قمت في هذا المشروع بتنظيف وتحليل بيانات الشركات التعاونية الفلاحية في تونس (بيانات وزارة الفلاحة). الهدف الأساسي هو تحويل الجداول الخام غير الموحدة إلى بيانات نظيفة، واستخراج مؤشرات تساعد في فهم توزيع رؤوس الأموال والأنشطة الفلاحية، مع بناء لوحة تحكم (Dashboard) تفاعلية لمتابعة الأرقام بسهولة.
 
-### 🧭 Core Business Questions Addressed
-1. **Regional Density:** Which governance zones and delegations demonstrate the highest concentration of cooperative infrastructure?
-2. **Capitalization Profiles:** What is the macroeconomic distribution of total capital investment across regions?
-3. **Market Share Dynamics:** How are diverse agricultural activities segmented across national networks?
-4. **Structural Correlation:** Does a cooperative’s baseline financial capitalization directly drive its capacity to attract members?
-5. **Asset Domination:** Are there extreme financial anomalies that statistically distort standard market averages?
+### خطوات العمل وتنظيف البيانات (Python)
+اعتمدت على مكتبة `Pandas` في بايثون لمعالجة المشاكل الموجودة في الملف الأصلي:
+* **توحيد أسماء المناطق:** كان هناك اختلاف كبير في كتابة نفس المعتمدية (مثلاً: "باجة ج"، "معتمدية باجة الجنوبية"، "بالجنوب"). قمت بتوحيدها وترجمتها إلى أسماء لاتينية قياسية (`Béja Nord`, `Béja Sud`, `Djebba`, `Tibar`...) لتسهيل التجميع والرسم.
+* **تصحيح الوحدات المالية:** بعض القيم المالية كانت مسجلة بالآلاف المختصرة (مثل `10` أو `16.15` بدلاً من `10000` و `16150`)، فتم توحيدها لتكون جميعها بالدينار التونسي الكامل.
+* **معالجة القيم المفقودة:** تعويض الخانات الفارغة في رأس المال باستخدام الوسيط (Median) الخاص بكل منطقة حتى لا تتأثر الحسابات بالقيم الشاذة.
 
-### 📊 Analytical Insights & Strategic Discoveries
-
-#### 1. Structural Correlation Insight (Capital vs. Membership)
-* **Statistical Finding:** The Pearson Correlation analysis between total baseline capital and active registered membership yielded a coefficient approaching zero.
-* **Strategic Interpretation:** Financial power is **not** the primary mechanism driving Tunisian farmers to join agricultural cooperatives. Geographical convenience and operational capabilities are the true drivers of membership scale, signaling that government funding should focus on infrastructure availability over raw asset capitalization.
-
-#### 2. Financial Outliers & Domination Isolation
-* **Statistical Finding:** Utilizing the Interquartile Range (IQR) bounding method, the financial distribution isolated select dominant outlier cooperatives maintaining capital balances significantly exceeding standard margins (upper bounds ranging from 4,000 to 16,000 TND, with outliers peaking at 25,000 TND).
-* **Strategic Interpretation:** A small tier of highly capitalized cooperative hubs holds disproportionate asset control. Public subsidies must be carefully audited and targeted toward under-funded granular hubs inside the standard IQR box to ensure equitable national market development.
+### أبرز النتائج من التحليل
+1. **العلاقة بين رأس المال وعدد المنخرطين:** معامل الارتباط (Pearson) طلع قريباً جداً من الصفر. هذا يعني أن حجم رأس مال الشركة ليس هو السبب الذي يجذب الفلاحين للانخراط، بل قرب الشركة جغرافياً وتوفر الخدمات اليومية هو العامل الأهم.
+2. **الشركات ذات رؤوس الأموال الضخمة (Outliers):** باستخدام طريقة الـ IQR، لاحظت أن أغلب الشركات يتراوح رأس مالها بين 4,000 و 16,000 دينار، بينما توجد قلة قليلة تتجاوز 25,000 دينار وتؤثر على المتوسط العام.
+3. **توزيع الأنشطة:** أغلب الشركات تتركز في قطاع الحبوب وتربية الماشية، مع وجود نقص واضح في شركات الخدمات الفلاحية واللوجستية.
 
 ---
 
-## 📁 هيكلية مجلدات المشروع / Repository Structure
+## Project Summary
+
+### Overview
+This project focuses on cleaning, analyzing, and visualizing dataset records of Tunisian Agricultural Cooperative Societies (SMSA). Starting from messy raw administrative files, I built a Python script to clean the data and connected the output to an interactive Google Sheets dashboard to track capital distribution and activity shares across regions.
+
+### Data Cleaning Pipeline (Python / Pandas)
+The raw data required several preprocessing steps in `real_agri_analysis.py`:
+* **Geo-Standardization:** Merged inconsistent Arabic text entries for the same delegations (e.g., variations of Béja Sud) into clean, standardized Latin names to prevent split groupings during analysis.
+* **Unit Scaling:** Fixed inconsistent financial entries where some capital values were recorded in thousands (e.g., `16.15` instead of `16150`), scaling all entries uniformly to TND.
+* **Handling Missing Data:** Imputed missing capital values using regional medians to avoid skewing the distribution.
+
+### Key Findings
+1. **Capital vs. Membership:** The Pearson correlation between a cooperative's capital and its number of members is nearly zero. Farmers join cooperatives based on location and available services rather than the company's financial size.
+2. **Financial Outliers (IQR):** While most cooperatives operate with a capital between 4,000 and 16,000 TND, a few large outliers exceed 25,000 TND, pulling the overall average upward.
+3. **Activity Breakdown:** The majority of cooperatives are concentrated in cereals and livestock, leaving a noticeable gap in agricultural logistics and support services.
+
+---
+
+## 📁 ملفات المشروع / Repository Structure
 ```text
-├── data_raw/          # البيانات الخام والمشتتة القادمة من الإدارة الفلاحية
-├── data_processed/    # البيانات النظيفة والمترجمة بالكامل والجاهزة للتحليل
-└── notebooks/         # أكواد بايثون والرسومات البيانية عالية الدقة والداشبورد
+├── data_raw/          # الملفات الخام الأصلية / Raw dataset files
+├── data_processed/    # البيانات النظيفة بعد المعالجة / Cleaned CSV output
+└── notebooks/         # كود بايثون والرسومات البيانية / Python scripts & plots
 ```
 
